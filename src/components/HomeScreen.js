@@ -1,12 +1,11 @@
 import { Image, StyleSheet, View } from "react-native";
 import Icon from "../../assets/Aina.jpeg";
+import { Text } from "react-native";
 
-export default function SplashScreenView () {
+export default function HomeScreen () {
   return (
     <View style={styles.container}>
-        <View>
-            <Image source={Icon} style={styles.image}/>
-        </View>
+        <Text> Welcome to HomeScreen</Text>
     </View>
   )
 }
@@ -17,10 +16,5 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    image : {
-        width: 400,
-        height: 600,
-        resizeMode: "cover",
-    }
   });
   
