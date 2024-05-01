@@ -5,7 +5,7 @@ export default function SplashScreenView () {
   return (
     <View style={styles.container}>
         <View>
-            <Image source={Icon} style={styles.images}
+            <Image source={Icon} style={styles.image}/>
         </View>
     </View>
   )
@@ -17,8 +17,10 @@ const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
-    images : {
-        
+    image : {
+        width: 100,
+        height: 100,
+        resizeMode: "cover",
     }
   });
   
