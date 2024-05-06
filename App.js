@@ -2,9 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView,StyleSheet } from 'react-native';
 // import { StyleSheet,Text, View } from 'react-native';
-import HomeScreen from './src/components/HomeScreen'
-import SplashScreen from './src/components/SplashScreenView';
+import HomeScreen from './src/Screen/HomeScreen';
+import SplashScreen from './src/Screen/SplashScreenView';
+
 export default function App() {
+  
   const [isShowSplash, setIsShowSplash] = useState(true);
   useEffect(() =>{
     setTimeout(()=>{
@@ -14,7 +16,7 @@ export default function App() {
   return (
   <>
   <SafeAreaView style={styles.safeContainer}>
-    <StatusBar style="a uto" />
+    <StatusBar style="auto" />
     {isShowSplash ? <SplashScreen /> : <HomeScreen />}
   </SafeAreaView>
   </>)
